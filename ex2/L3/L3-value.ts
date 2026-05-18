@@ -97,11 +97,11 @@ export const closureToString = (c: Closure): string =>
 
 //2b printable form for Class
 export const classToString = (c: Class): string =>
-    `<Class ${c.fields} ${c.methods}>`
+    "Class"
 
 //2b printable form for Object
 export const objectToString = (o: Object): string =>
-    `<Object ${o.fields} ${o.values} ${o.methods}>`
+    "Object"
 
 export const compoundSExpToArray = (cs: CompoundSExp, res: string[]): string[] | { s1: string[], s2: string } =>
     isEmptySExp(cs.val2) ? append(valueToString(cs.val1), res) :
